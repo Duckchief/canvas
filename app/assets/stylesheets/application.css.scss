@@ -13,3 +13,37 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap";
+
+html,
+body {
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+
+#footer {
+  position:absolute;
+  bottom:0px;
+  width: 100%;
+}
+
+#container {
+  width: 940px;
+  margin: 0px auto;
+}
+
+#footer-container-overlay {
+  background:none repeat scroll 0% 0% rgba(0,0,0,0.7);
+  height: 500px;
+}
+
+.footer-navigation {
+  list-style-type: none;
+  font-size: 9pt
+}
+
+#footer-container a {
+  color: #FFF;
+}
