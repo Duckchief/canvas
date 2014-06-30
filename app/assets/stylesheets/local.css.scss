@@ -1,0 +1,97 @@
+@import "bootstrap";
+
+html,
+body {
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+// footer css goes here
+#footer {
+  position:relative;
+  bottom:0px;
+  width: 100%;
+}
+
+#footer-container-overlay {
+  background:none repeat scroll 0% 0% rgba(0,0,0,0.7);
+  height: 400px;
+}
+
+#footer-container {
+  a {
+    color: #FFF;
+    text-decoration: none;
+  }
+  ul {
+    list-style-type: none;
+    font-size: 9pt;
+    padding: 0;
+  }
+  h5 {
+    @extend .nav-basics;
+    color: deeppink;
+    margin-bottom: 1em;
+  }
+  .footer-navigation {
+    list-style-type: none;
+    font-size: 9pt;
+    padding-top: 50px;
+  }
+}
+
+// nav bar css goes here
+.nav-main {
+  @extend .nav-basics;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.navbar-inverse {
+  .navbar-nav {
+    .active, li {
+      .highlight {
+
+      }
+      a:hover, .highlight  {
+        background-color: deeppink;
+      }
+      a {
+        color: #ffffff;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+// Slider css goes here
+.hero {
+  height: 400px;
+  border: 1px red solid;
+}
+
+.carousel, .carousel-inner .item,  .carousel-inner .item img {
+  height: 100%;
+  width: 100%;
+}
+
+// misc css goes here
+li {
+  line-height: 20px;
+}
+
+.uppercase {
+  text-transform: uppercase
+}
+
+#container {
+  width: 940px;
+  margin: 0px auto;
+}
+
+.nav-basics {
+  font-family: futura-pt, arial, sans-serif;
+  font-weight: 700;
+  text-shadow: none;
+}
