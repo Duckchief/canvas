@@ -5,6 +5,9 @@ body {
   margin:0;
   padding:0;
   height:100%;
+  font-family: futura-pt, arial, sans-serif;
+  text-shadow: none;
+  font-size: 14px;
 }
 //---------------------
 // footer css goes here
@@ -74,6 +77,25 @@ body {
   overflow: hidden;
 }
 
+#hero-text-block {
+  height: 350px;
+  width: 400px;
+  padding: 20px;
+}
+
+#hero-text-block.onwhite p.hero-text-byline {
+  color: #666666;
+  text-shadow: none;
+  font-size: 150%;
+}
+
+#hero-container-super.transparent h1 {
+  color: deeppink;
+  font-size: 300%;
+  line-height: 0.9;
+  letter-spacing: -2px;
+}
+
 .carousel, .carousel-inner .item,  .carousel-inner .item img {
   height: 100%;
   width: 100%;
@@ -98,13 +120,48 @@ li {
   margin: 0px auto;
 }
 
-.nav-basics {
-  font-family: futura-pt, arial, sans-serif;
+.nav-basics, h1,.uppercase {
   font-weight: 700;
-  text-shadow: none;
 }
 
 .black_bar {
   border-bottom: 50px solid #000000;
   margin-bottom: 50px;
 }
+
+#price-table.table {
+  tbody {
+    tr {
+      td {
+        text-align: center;
+        vertical-align: middle;
+        min-width: 83px;
+        width: 83px;
+      }
+
+      td.size-column {
+        border-top: none;
+        border-right: 1px solid #666666;
+      }
+
+      td.price-column {
+        border-top: none;
+        a {
+          font-size: 130%;
+          text-decoration: none;
+          }
+        a:hover {
+          color: deeppink;
+        }
+        a:link {
+          color: #000000;
+        }
+      }
+    }
+  }
+}
+
+
+  .table-striped td {
+    padding: 15px;
+  }
